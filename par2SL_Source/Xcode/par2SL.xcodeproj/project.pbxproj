@@ -1,0 +1,513 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 44;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		437ADA3C10EB54D3009B5974 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 437ADA3B10EB54D3009B5974 /* Foundation.framework */; };
+		438E808610B70A6800B069F6 /* verificationpacket.h in Headers */ = {isa = PBXBuildFile; fileRef = 43E9BA3F048E061000000096 /* verificationpacket.h */; };
+		438E808710B70A6800B069F6 /* verificationhashtable.h in Headers */ = {isa = PBXBuildFile; fileRef = 43E9BA3D048E061000000096 /* verificationhashtable.h */; };
+		438E808810B70A6800B069F6 /* reedsolomon.h in Headers */ = {isa = PBXBuildFile; fileRef = 43E9BA32048E061000000096 /* reedsolomon.h */; };
+		438E808910B70A6800B069F6 /* recoverypacket.h in Headers */ = {isa = PBXBuildFile; fileRef = 43E9BA30048E061000000096 /* recoverypacket.h */; };
+		438E808A10B70A6800B069F6 /* commandline.h in Headers */ = {isa = PBXBuildFile; fileRef = 43E9B9F5048E060F00000096 /* commandline.h */; };
+		438E808B10B70A6800B069F6 /* crc.h in Headers */ = {isa = PBXBuildFile; fileRef = 43E9B9FB048E061000000096 /* crc.h */; };
+		438E808C10B70A6800B069F6 /* creatorpacket.h in Headers */ = {isa = PBXBuildFile; fileRef = 43E9B9FD048E061000000096 /* creatorpacket.h */; };
+		438E808D10B70A6800B069F6 /* criticalpacket.h in Headers */ = {isa = PBXBuildFile; fileRef = 43E9B9FF048E061000000096 /* criticalpacket.h */; };
+		438E808E10B70A6800B069F6 /* datablock.h in Headers */ = {isa = PBXBuildFile; fileRef = 43E9BA01048E061000000096 /* datablock.h */; };
+		438E808F10B70A6800B069F6 /* descriptionpacket.h in Headers */ = {isa = PBXBuildFile; fileRef = 43E9BA04048E061000000096 /* descriptionpacket.h */; };
+		438E809010B70A6800B069F6 /* diskfile.h in Headers */ = {isa = PBXBuildFile; fileRef = 43E9BA06048E061000000096 /* diskfile.h */; };
+		438E809110B70A6800B069F6 /* filechecksummer.h in Headers */ = {isa = PBXBuildFile; fileRef = 43E9BA08048E061000000096 /* filechecksummer.h */; };
+		438E809210B70A6800B069F6 /* galois.h in Headers */ = {isa = PBXBuildFile; fileRef = 43E9BA0A048E061000000096 /* galois.h */; };
+		438E809310B70A6800B069F6 /* letype.h in Headers */ = {isa = PBXBuildFile; fileRef = 43E9BA0D048E061000000096 /* letype.h */; };
+		438E809410B70A6800B069F6 /* mainpacket.h in Headers */ = {isa = PBXBuildFile; fileRef = 43E9BA0F048E061000000096 /* mainpacket.h */; };
+		438E809510B70A6800B069F6 /* md5.h in Headers */ = {isa = PBXBuildFile; fileRef = 43E9BA13048E061000000096 /* md5.h */; };
+		438E809610B70A6800B069F6 /* par1fileformat.h in Headers */ = {isa = PBXBuildFile; fileRef = 43E9BA18048E061000000096 /* par1fileformat.h */; };
+		438E809710B70A6800B069F6 /* par1repairer.h in Headers */ = {isa = PBXBuildFile; fileRef = 43E9BA1A048E061000000096 /* par1repairer.h */; };
+		438E809810B70A6800B069F6 /* par1repairersourcefile.h in Headers */ = {isa = PBXBuildFile; fileRef = 43E9BA1C048E061000000096 /* par1repairersourcefile.h */; };
+		438E809910B70A6800B069F6 /* par2cmdline.h in Headers */ = {isa = PBXBuildFile; fileRef = 43E9BA1E048E061000000096 /* par2cmdline.h */; };
+		438E809A10B70A6800B069F6 /* par2creator.h in Headers */ = {isa = PBXBuildFile; fileRef = 43E9BA22048E061000000096 /* par2creator.h */; };
+		438E809B10B70A6800B069F6 /* par2creatorsourcefile.h in Headers */ = {isa = PBXBuildFile; fileRef = 43E9BA24048E061000000096 /* par2creatorsourcefile.h */; };
+		438E809C10B70A6800B069F6 /* par2fileformat.h in Headers */ = {isa = PBXBuildFile; fileRef = 43E9BA26048E061000000096 /* par2fileformat.h */; };
+		438E809D10B70A6800B069F6 /* par2repairer.h in Headers */ = {isa = PBXBuildFile; fileRef = 43E9BA28048E061000000096 /* par2repairer.h */; };
+		438E809E10B70A6800B069F6 /* par2repairersourcefile.h in Headers */ = {isa = PBXBuildFile; fileRef = 43E9BA2A048E061000000096 /* par2repairersourcefile.h */; };
+		438E80A110B70A6800B069F6 /* commandline.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43E9B9F4048E060F00000096 /* commandline.cpp */; };
+		438E80A210B70A6800B069F6 /* par2cmdline.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43E9BA1D048E061000000096 /* par2cmdline.cpp */; };
+		438E80A310B70A6800B069F6 /* crc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43E9B9FA048E061000000096 /* crc.cpp */; };
+		438E80A410B70A6800B069F6 /* creatorpacket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43E9B9FC048E061000000096 /* creatorpacket.cpp */; };
+		438E80A510B70A6800B069F6 /* criticalpacket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43E9B9FE048E061000000096 /* criticalpacket.cpp */; };
+		438E80A610B70A6800B069F6 /* datablock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43E9BA00048E061000000096 /* datablock.cpp */; };
+		438E80A710B70A6800B069F6 /* descriptionpacket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43E9BA03048E061000000096 /* descriptionpacket.cpp */; };
+		438E80A810B70A6800B069F6 /* galois.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43E9BA09048E061000000096 /* galois.cpp */; };
+		438E80A910B70A6800B069F6 /* mainpacket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43E9BA0E048E061000000096 /* mainpacket.cpp */; };
+		438E80AA10B70A6800B069F6 /* filechecksummer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43E9BA07048E061000000096 /* filechecksummer.cpp */; };
+		438E80AB10B70A6800B069F6 /* md5.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43E9BA12048E061000000096 /* md5.cpp */; };
+		438E80AC10B70A6800B069F6 /* par1fileformat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43E9BA17048E061000000096 /* par1fileformat.cpp */; };
+		438E80AD10B70A6800B069F6 /* par1repairer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43E9BA19048E061000000096 /* par1repairer.cpp */; };
+		438E80AE10B70A6800B069F6 /* par1repairersourcefile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43E9BA1B048E061000000096 /* par1repairersourcefile.cpp */; };
+		438E80AF10B70A6800B069F6 /* par2creator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43E9BA21048E061000000096 /* par2creator.cpp */; };
+		438E80B010B70A6800B069F6 /* par2creatorsourcefile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43E9BA23048E061000000096 /* par2creatorsourcefile.cpp */; };
+		438E80B110B70A6800B069F6 /* par2fileformat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43E9BA25048E061000000096 /* par2fileformat.cpp */; };
+		438E80B210B70A6800B069F6 /* par2repairer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43E9BA27048E061000000096 /* par2repairer.cpp */; };
+		438E80B310B70A6800B069F6 /* par2repairersourcefile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43E9BA29048E061000000096 /* par2repairersourcefile.cpp */; };
+		438E80B410B70A6800B069F6 /* recoverypacket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43E9BA2F048E061000000096 /* recoverypacket.cpp */; };
+		438E80B510B70A6800B069F6 /* reedsolomon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43E9BA31048E061000000096 /* reedsolomon.cpp */; };
+		438E80B610B70A6800B069F6 /* verificationhashtable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43E9BA3C048E061000000096 /* verificationhashtable.cpp */; };
+		438E80B710B70A6800B069F6 /* verificationpacket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43E9BA3E048E061000000096 /* verificationpacket.cpp */; };
+		438E80B810B70A6800B069F6 /* DiskFileX.mm in Sources */ = {isa = PBXBuildFile; fileRef = 434105D805E923A5008470C3 /* DiskFileX.mm */; };
+		438E82BB10B72C9E00B069F6 /* libcrypto.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 438E82BA10B72C9E00B069F6 /* libcrypto.dylib */; };
+		43AE445310E3DAC300FAC62C /* FileCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 43AE445110E3DAC300FAC62C /* FileCache.h */; };
+		43F6CDEC10C9657100E03D94 /* TimeReporter.h in Headers */ = {isa = PBXBuildFile; fileRef = 43F6CDEA10C9657100E03D94 /* TimeReporter.h */; };
+		43F6CDED10C9657100E03D94 /* TimeReporter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43F6CDEB10C9657100E03D94 /* TimeReporter.cpp */; };
+		43F6CE9610CA991600E03D94 /* OSXStuff.h in Headers */ = {isa = PBXBuildFile; fileRef = 43F6CE9410CA991600E03D94 /* OSXStuff.h */; };
+		43F6CE9710CA991600E03D94 /* OSXStuff.mm in Sources */ = {isa = PBXBuildFile; fileRef = 43F6CE9510CA991600E03D94 /* OSXStuff.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		438E80BE10B70A6800B069F6 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.gcc;
+			fileType = sourcecode.cpp;
+			isEditable = 1;
+			outputFiles = (
+			);
+		};
+/* End PBXBuildRule section */
+
+/* Begin PBXFileReference section */
+		434105D805E923A5008470C3 /* DiskFileX.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DiskFileX.mm; sourceTree = SOURCE_ROOT; };
+		434EAF7A072AD3A400EF5C08 /* COPYING */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; name = COPYING; path = ../COPYING; sourceTree = "<group>"; };
+		437ADA3B10EB54D3009B5974 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		438E80C510B70A6800B069F6 /* par2SL */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = par2SL; sourceTree = BUILT_PRODUCTS_DIR; };
+		438E82BA10B72C9E00B069F6 /* libcrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcrypto.dylib; path = usr/lib/libcrypto.dylib; sourceTree = SDKROOT; };
+		43AE445110E3DAC300FAC62C /* FileCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileCache.h; sourceTree = SOURCE_ROOT; };
+		43AE445210E3DAC300FAC62C /* FileCache.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FileCache.mm; sourceTree = SOURCE_ROOT; };
+		43E9B9F4048E060F00000096 /* commandline.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = commandline.cpp; path = ../commandline.cpp; sourceTree = SOURCE_ROOT; };
+		43E9B9F5048E060F00000096 /* commandline.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = commandline.h; path = ../commandline.h; sourceTree = SOURCE_ROOT; };
+		43E9B9FA048E061000000096 /* crc.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = crc.cpp; path = ../crc.cpp; sourceTree = SOURCE_ROOT; };
+		43E9B9FB048E061000000096 /* crc.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = crc.h; path = ../crc.h; sourceTree = SOURCE_ROOT; };
+		43E9B9FC048E061000000096 /* creatorpacket.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = creatorpacket.cpp; path = ../creatorpacket.cpp; sourceTree = SOURCE_ROOT; };
+		43E9B9FD048E061000000096 /* creatorpacket.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = creatorpacket.h; path = ../creatorpacket.h; sourceTree = SOURCE_ROOT; };
+		43E9B9FE048E061000000096 /* criticalpacket.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = criticalpacket.cpp; path = ../criticalpacket.cpp; sourceTree = SOURCE_ROOT; };
+		43E9B9FF048E061000000096 /* criticalpacket.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = criticalpacket.h; path = ../criticalpacket.h; sourceTree = SOURCE_ROOT; };
+		43E9BA00048E061000000096 /* datablock.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = datablock.cpp; path = ../datablock.cpp; sourceTree = SOURCE_ROOT; };
+		43E9BA01048E061000000096 /* datablock.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = datablock.h; path = ../datablock.h; sourceTree = SOURCE_ROOT; };
+		43E9BA03048E061000000096 /* descriptionpacket.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = descriptionpacket.cpp; path = ../descriptionpacket.cpp; sourceTree = SOURCE_ROOT; };
+		43E9BA04048E061000000096 /* descriptionpacket.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = descriptionpacket.h; path = ../descriptionpacket.h; sourceTree = SOURCE_ROOT; };
+		43E9BA06048E061000000096 /* diskfile.h */ = {isa = PBXFileReference; fileEncoding = 30; indentWidth = 2; lastKnownFileType = sourcecode.c.h; name = diskfile.h; path = ../diskfile.h; sourceTree = SOURCE_ROOT; tabWidth = 4; usesTabs = 0; };
+		43E9BA07048E061000000096 /* filechecksummer.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = filechecksummer.cpp; path = ../filechecksummer.cpp; sourceTree = SOURCE_ROOT; };
+		43E9BA08048E061000000096 /* filechecksummer.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = filechecksummer.h; path = ../filechecksummer.h; sourceTree = SOURCE_ROOT; };
+		43E9BA09048E061000000096 /* galois.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = galois.cpp; path = ../galois.cpp; sourceTree = SOURCE_ROOT; };
+		43E9BA0A048E061000000096 /* galois.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = galois.h; path = ../galois.h; sourceTree = SOURCE_ROOT; };
+		43E9BA0D048E061000000096 /* letype.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = letype.h; path = ../letype.h; sourceTree = SOURCE_ROOT; };
+		43E9BA0E048E061000000096 /* mainpacket.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = mainpacket.cpp; path = ../mainpacket.cpp; sourceTree = SOURCE_ROOT; };
+		43E9BA0F048E061000000096 /* mainpacket.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = mainpacket.h; path = ../mainpacket.h; sourceTree = SOURCE_ROOT; };
+		43E9BA12048E061000000096 /* md5.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = md5.cpp; path = ../md5.cpp; sourceTree = SOURCE_ROOT; };
+		43E9BA13048E061000000096 /* md5.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = md5.h; path = ../md5.h; sourceTree = SOURCE_ROOT; };
+		43E9BA17048E061000000096 /* par1fileformat.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = par1fileformat.cpp; path = ../par1fileformat.cpp; sourceTree = SOURCE_ROOT; };
+		43E9BA18048E061000000096 /* par1fileformat.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = par1fileformat.h; path = ../par1fileformat.h; sourceTree = SOURCE_ROOT; };
+		43E9BA19048E061000000096 /* par1repairer.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = par1repairer.cpp; path = ../par1repairer.cpp; sourceTree = SOURCE_ROOT; };
+		43E9BA1A048E061000000096 /* par1repairer.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = par1repairer.h; path = ../par1repairer.h; sourceTree = SOURCE_ROOT; };
+		43E9BA1B048E061000000096 /* par1repairersourcefile.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = par1repairersourcefile.cpp; path = ../par1repairersourcefile.cpp; sourceTree = SOURCE_ROOT; };
+		43E9BA1C048E061000000096 /* par1repairersourcefile.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = par1repairersourcefile.h; path = ../par1repairersourcefile.h; sourceTree = SOURCE_ROOT; };
+		43E9BA1D048E061000000096 /* par2cmdline.cpp */ = {isa = PBXFileReference; fileEncoding = 30; indentWidth = 2; lastKnownFileType = sourcecode.cpp.cpp; name = par2cmdline.cpp; path = ../par2cmdline.cpp; sourceTree = SOURCE_ROOT; tabWidth = 4; usesTabs = 0; };
+		43E9BA1E048E061000000096 /* par2cmdline.h */ = {isa = PBXFileReference; fileEncoding = 30; indentWidth = 2; lastKnownFileType = sourcecode.c.h; name = par2cmdline.h; path = ../par2cmdline.h; sourceTree = SOURCE_ROOT; tabWidth = 4; usesTabs = 0; };
+		43E9BA21048E061000000096 /* par2creator.cpp */ = {isa = PBXFileReference; fileEncoding = 30; indentWidth = 2; lastKnownFileType = sourcecode.cpp.cpp; name = par2creator.cpp; path = ../par2creator.cpp; sourceTree = SOURCE_ROOT; tabWidth = 2; usesTabs = 0; };
+		43E9BA22048E061000000096 /* par2creator.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = par2creator.h; path = ../par2creator.h; sourceTree = SOURCE_ROOT; };
+		43E9BA23048E061000000096 /* par2creatorsourcefile.cpp */ = {isa = PBXFileReference; fileEncoding = 30; indentWidth = 2; lastKnownFileType = sourcecode.cpp.cpp; name = par2creatorsourcefile.cpp; path = ../par2creatorsourcefile.cpp; sourceTree = SOURCE_ROOT; tabWidth = 2; usesTabs = 0; wrapsLines = 0; };
+		43E9BA24048E061000000096 /* par2creatorsourcefile.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = par2creatorsourcefile.h; path = ../par2creatorsourcefile.h; sourceTree = SOURCE_ROOT; };
+		43E9BA25048E061000000096 /* par2fileformat.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = par2fileformat.cpp; path = ../par2fileformat.cpp; sourceTree = SOURCE_ROOT; };
+		43E9BA26048E061000000096 /* par2fileformat.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = par2fileformat.h; path = ../par2fileformat.h; sourceTree = SOURCE_ROOT; };
+		43E9BA27048E061000000096 /* par2repairer.cpp */ = {isa = PBXFileReference; fileEncoding = 30; indentWidth = 2; lastKnownFileType = sourcecode.cpp.cpp; name = par2repairer.cpp; path = ../par2repairer.cpp; sourceTree = SOURCE_ROOT; tabWidth = 2; usesTabs = 0; };
+		43E9BA28048E061000000096 /* par2repairer.h */ = {isa = PBXFileReference; fileEncoding = 30; indentWidth = 2; lastKnownFileType = sourcecode.c.h; name = par2repairer.h; path = ../par2repairer.h; sourceTree = SOURCE_ROOT; tabWidth = 4; usesTabs = 0; };
+		43E9BA29048E061000000096 /* par2repairersourcefile.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = par2repairersourcefile.cpp; path = ../par2repairersourcefile.cpp; sourceTree = SOURCE_ROOT; };
+		43E9BA2A048E061000000096 /* par2repairersourcefile.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = par2repairersourcefile.h; path = ../par2repairersourcefile.h; sourceTree = SOURCE_ROOT; };
+		43E9BA2F048E061000000096 /* recoverypacket.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = recoverypacket.cpp; path = ../recoverypacket.cpp; sourceTree = SOURCE_ROOT; };
+		43E9BA30048E061000000096 /* recoverypacket.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = recoverypacket.h; path = ../recoverypacket.h; sourceTree = SOURCE_ROOT; };
+		43E9BA31048E061000000096 /* reedsolomon.cpp */ = {isa = PBXFileReference; fileEncoding = 30; indentWidth = 2; lastKnownFileType = sourcecode.cpp.cpp; name = reedsolomon.cpp; path = ../reedsolomon.cpp; sourceTree = SOURCE_ROOT; tabWidth = 2; usesTabs = 0; };
+		43E9BA32048E061000000096 /* reedsolomon.h */ = {isa = PBXFileReference; fileEncoding = 30; indentWidth = 2; lastKnownFileType = sourcecode.c.h; name = reedsolomon.h; path = ../reedsolomon.h; sourceTree = SOURCE_ROOT; tabWidth = 2; usesTabs = 0; };
+		43E9BA3C048E061000000096 /* verificationhashtable.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = verificationhashtable.cpp; path = ../verificationhashtable.cpp; sourceTree = SOURCE_ROOT; };
+		43E9BA3D048E061000000096 /* verificationhashtable.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = verificationhashtable.h; path = ../verificationhashtable.h; sourceTree = SOURCE_ROOT; };
+		43E9BA3E048E061000000096 /* verificationpacket.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = verificationpacket.cpp; path = ../verificationpacket.cpp; sourceTree = SOURCE_ROOT; };
+		43E9BA3F048E061000000096 /* verificationpacket.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = verificationpacket.h; path = ../verificationpacket.h; sourceTree = SOURCE_ROOT; };
+		43F6CDEA10C9657100E03D94 /* TimeReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeReporter.h; sourceTree = SOURCE_ROOT; };
+		43F6CDEB10C9657100E03D94 /* TimeReporter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TimeReporter.cpp; sourceTree = SOURCE_ROOT; };
+		43F6CE9410CA991600E03D94 /* OSXStuff.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSXStuff.h; sourceTree = SOURCE_ROOT; };
+		43F6CE9510CA991600E03D94 /* OSXStuff.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OSXStuff.mm; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		438E80B910B70A6800B069F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				438E82BB10B72C9E00B069F6 /* libcrypto.dylib in Frameworks */,
+				437ADA3C10EB54D3009B5974 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		43DA014B05DF9AA3008730E2 /* OSX */ = {
+			isa = PBXGroup;
+			children = (
+				434105D805E923A5008470C3 /* DiskFileX.mm */,
+				43F6CDEA10C9657100E03D94 /* TimeReporter.h */,
+				43F6CDEB10C9657100E03D94 /* TimeReporter.cpp */,
+				43F6CE9410CA991600E03D94 /* OSXStuff.h */,
+				43F6CE9510CA991600E03D94 /* OSXStuff.mm */,
+			);
+			name = OSX;
+			sourceTree = "<group>";
+		};
+		43DA016D05DFA09F008730E2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				437ADA3B10EB54D3009B5974 /* Foundation.framework */,
+				438E82BA10B72C9E00B069F6 /* libcrypto.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		43E9B99D048E04C000000096 = {
+			isa = PBXGroup;
+			children = (
+				43E9BA42048E06E400000096 /* Sources */,
+				43E9BA7F048E0EC700000096 /* Headers */,
+				43DA014B05DF9AA3008730E2 /* OSX */,
+				43DA016D05DFA09F008730E2 /* Frameworks */,
+				434EAF7A072AD3A400EF5C08 /* COPYING */,
+				43E9BA4B048E0C9D00000096 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		43E9BA42048E06E400000096 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				43E9B9F4048E060F00000096 /* commandline.cpp */,
+				43E9B9FA048E061000000096 /* crc.cpp */,
+				43E9B9FC048E061000000096 /* creatorpacket.cpp */,
+				43E9B9FE048E061000000096 /* criticalpacket.cpp */,
+				43E9BA00048E061000000096 /* datablock.cpp */,
+				43E9BA03048E061000000096 /* descriptionpacket.cpp */,
+				43AE445210E3DAC300FAC62C /* FileCache.mm */,
+				43E9BA07048E061000000096 /* filechecksummer.cpp */,
+				43E9BA09048E061000000096 /* galois.cpp */,
+				43E9BA0E048E061000000096 /* mainpacket.cpp */,
+				43E9BA12048E061000000096 /* md5.cpp */,
+				43E9BA17048E061000000096 /* par1fileformat.cpp */,
+				43E9BA19048E061000000096 /* par1repairer.cpp */,
+				43E9BA1B048E061000000096 /* par1repairersourcefile.cpp */,
+				43E9BA1D048E061000000096 /* par2cmdline.cpp */,
+				43E9BA21048E061000000096 /* par2creator.cpp */,
+				43E9BA23048E061000000096 /* par2creatorsourcefile.cpp */,
+				43E9BA25048E061000000096 /* par2fileformat.cpp */,
+				43E9BA27048E061000000096 /* par2repairer.cpp */,
+				43E9BA29048E061000000096 /* par2repairersourcefile.cpp */,
+				43E9BA2F048E061000000096 /* recoverypacket.cpp */,
+				43E9BA31048E061000000096 /* reedsolomon.cpp */,
+				43E9BA3C048E061000000096 /* verificationhashtable.cpp */,
+				43E9BA3E048E061000000096 /* verificationpacket.cpp */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		43E9BA4B048E0C9D00000096 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				438E80C510B70A6800B069F6 /* par2SL */,
+			);
+			name = Products;
+			path = ..;
+			sourceTree = SOURCE_ROOT;
+		};
+		43E9BA7F048E0EC700000096 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				43E9B9F5048E060F00000096 /* commandline.h */,
+				43E9B9FB048E061000000096 /* crc.h */,
+				43E9B9FD048E061000000096 /* creatorpacket.h */,
+				43E9B9FF048E061000000096 /* criticalpacket.h */,
+				43E9BA01048E061000000096 /* datablock.h */,
+				43E9BA04048E061000000096 /* descriptionpacket.h */,
+				43E9BA06048E061000000096 /* diskfile.h */,
+				43AE445110E3DAC300FAC62C /* FileCache.h */,
+				43E9BA08048E061000000096 /* filechecksummer.h */,
+				43E9BA0A048E061000000096 /* galois.h */,
+				43E9BA0D048E061000000096 /* letype.h */,
+				43E9BA0F048E061000000096 /* mainpacket.h */,
+				43E9BA13048E061000000096 /* md5.h */,
+				43E9BA18048E061000000096 /* par1fileformat.h */,
+				43E9BA1A048E061000000096 /* par1repairer.h */,
+				43E9BA1C048E061000000096 /* par1repairersourcefile.h */,
+				43E9BA1E048E061000000096 /* par2cmdline.h */,
+				43E9BA22048E061000000096 /* par2creator.h */,
+				43E9BA24048E061000000096 /* par2creatorsourcefile.h */,
+				43E9BA26048E061000000096 /* par2fileformat.h */,
+				43E9BA28048E061000000096 /* par2repairer.h */,
+				43E9BA2A048E061000000096 /* par2repairersourcefile.h */,
+				43E9BA30048E061000000096 /* recoverypacket.h */,
+				43E9BA32048E061000000096 /* reedsolomon.h */,
+				43E9BA3D048E061000000096 /* verificationhashtable.h */,
+				43E9BA3F048E061000000096 /* verificationpacket.h */,
+			);
+			name = Headers;
+			path = ..;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		438E808510B70A6800B069F6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				438E808610B70A6800B069F6 /* verificationpacket.h in Headers */,
+				438E808710B70A6800B069F6 /* verificationhashtable.h in Headers */,
+				438E808810B70A6800B069F6 /* reedsolomon.h in Headers */,
+				438E808910B70A6800B069F6 /* recoverypacket.h in Headers */,
+				438E808A10B70A6800B069F6 /* commandline.h in Headers */,
+				438E808B10B70A6800B069F6 /* crc.h in Headers */,
+				438E808C10B70A6800B069F6 /* creatorpacket.h in Headers */,
+				438E808D10B70A6800B069F6 /* criticalpacket.h in Headers */,
+				438E808E10B70A6800B069F6 /* datablock.h in Headers */,
+				438E808F10B70A6800B069F6 /* descriptionpacket.h in Headers */,
+				438E809010B70A6800B069F6 /* diskfile.h in Headers */,
+				438E809110B70A6800B069F6 /* filechecksummer.h in Headers */,
+				438E809210B70A6800B069F6 /* galois.h in Headers */,
+				438E809310B70A6800B069F6 /* letype.h in Headers */,
+				438E809410B70A6800B069F6 /* mainpacket.h in Headers */,
+				438E809510B70A6800B069F6 /* md5.h in Headers */,
+				438E809610B70A6800B069F6 /* par1fileformat.h in Headers */,
+				438E809710B70A6800B069F6 /* par1repairer.h in Headers */,
+				438E809810B70A6800B069F6 /* par1repairersourcefile.h in Headers */,
+				438E809910B70A6800B069F6 /* par2cmdline.h in Headers */,
+				438E809A10B70A6800B069F6 /* par2creator.h in Headers */,
+				438E809B10B70A6800B069F6 /* par2creatorsourcefile.h in Headers */,
+				438E809C10B70A6800B069F6 /* par2fileformat.h in Headers */,
+				438E809D10B70A6800B069F6 /* par2repairer.h in Headers */,
+				438E809E10B70A6800B069F6 /* par2repairersourcefile.h in Headers */,
+				43F6CDEC10C9657100E03D94 /* TimeReporter.h in Headers */,
+				43F6CE9610CA991600E03D94 /* OSXStuff.h in Headers */,
+				43AE445310E3DAC300FAC62C /* FileCache.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		438E808310B70A6800B069F6 /* par2 Snow Leopard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 438E80BF10B70A6800B069F6 /* Build configuration list for PBXNativeTarget "par2 Snow Leopard" */;
+			buildPhases = (
+				438E808410B70A6800B069F6 /* ShellScript */,
+				438E808510B70A6800B069F6 /* Headers */,
+				438E80A010B70A6800B069F6 /* Sources */,
+				438E80B910B70A6800B069F6 /* Frameworks */,
+				438E80BB10B70A6800B069F6 /* Rez */,
+			);
+			buildRules = (
+				438E80BE10B70A6800B069F6 /* PBXBuildRule */,
+			);
+			comments = "About the build configurations: when used as a subproject in MacPAR deLuxe, the project has to be compiled with the macro MPDL defined. This macro is defined as a build parameter. However, xcode chooses the same build configuration names for main and subordinate projects, so the configurations are:\n- Deployment and Development: define the MPDL macro\n- Non-MPDL Deployment and Non-MPDL development: don't define the macro; the result will basically behave like the original tool (with some enhancements and bug fixes)\n\n\nThe 32-bit target should be used on pre-Leopard systems, because for a 64-bit compile I must include the 10.5 sdk. Therefore I don't want a fat binary with everything, because i don't know what would happen if the program was started in a 64-bit machine running Tiger. This way, MacPAR deLuxe can select the correct executable.\n";
+			dependencies = (
+			);
+			name = "par2 Snow Leopard";
+			productInstallPath = /usr/local/bin;
+			productName = par2;
+			productReference = 438E80C510B70A6800B069F6 /* par2SL */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		43E9B9A1048E04C000000096 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 4360F42B088D8AEF0063C32C /* Build configuration list for PBXProject "par2SL" */;
+			compatibilityVersion = "Xcode 3.0";
+			hasScannedForEncodings = 1;
+			mainGroup = 43E9B99D048E04C000000096;
+			productRefGroup = 43E9BA4B048E0C9D00000096 /* Products */;
+			projectDirPath = "";
+			projectRoot = ..;
+			targets = (
+				438E808310B70A6800B069F6 /* par2 Snow Leopard */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXRezBuildPhase section */
+		438E80BB10B70A6800B069F6 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		438E808410B70A6800B069F6 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+				../config.h,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "pushd ..\n./configure\npopd\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		438E80A010B70A6800B069F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				438E80A110B70A6800B069F6 /* commandline.cpp in Sources */,
+				438E80A210B70A6800B069F6 /* par2cmdline.cpp in Sources */,
+				438E80A310B70A6800B069F6 /* crc.cpp in Sources */,
+				438E80A410B70A6800B069F6 /* creatorpacket.cpp in Sources */,
+				438E80A510B70A6800B069F6 /* criticalpacket.cpp in Sources */,
+				438E80A610B70A6800B069F6 /* datablock.cpp in Sources */,
+				438E80A710B70A6800B069F6 /* descriptionpacket.cpp in Sources */,
+				438E80A810B70A6800B069F6 /* galois.cpp in Sources */,
+				438E80A910B70A6800B069F6 /* mainpacket.cpp in Sources */,
+				438E80AA10B70A6800B069F6 /* filechecksummer.cpp in Sources */,
+				438E80AB10B70A6800B069F6 /* md5.cpp in Sources */,
+				438E80AC10B70A6800B069F6 /* par1fileformat.cpp in Sources */,
+				438E80AD10B70A6800B069F6 /* par1repairer.cpp in Sources */,
+				438E80AE10B70A6800B069F6 /* par1repairersourcefile.cpp in Sources */,
+				438E80AF10B70A6800B069F6 /* par2creator.cpp in Sources */,
+				438E80B010B70A6800B069F6 /* par2creatorsourcefile.cpp in Sources */,
+				438E80B110B70A6800B069F6 /* par2fileformat.cpp in Sources */,
+				438E80B210B70A6800B069F6 /* par2repairer.cpp in Sources */,
+				438E80B310B70A6800B069F6 /* par2repairersourcefile.cpp in Sources */,
+				438E80B410B70A6800B069F6 /* recoverypacket.cpp in Sources */,
+				438E80B510B70A6800B069F6 /* reedsolomon.cpp in Sources */,
+				438E80B610B70A6800B069F6 /* verificationhashtable.cpp in Sources */,
+				438E80B710B70A6800B069F6 /* verificationpacket.cpp in Sources */,
+				438E80B810B70A6800B069F6 /* DiskFileX.mm in Sources */,
+				43F6CDED10C9657100E03D94 /* TimeReporter.cpp in Sources */,
+				43F6CE9710CA991600E03D94 /* OSXStuff.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4360F42C088D8AEF0063C32C /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
+			};
+			name = Development;
+		};
+		4360F42E088D8AEF0063C32C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = "";
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
+			};
+			name = Release;
+		};
+		438E80C010B70A6800B069F6 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				COPY_PHASE_STRIP = NO;
+				DEBUGGING_SYMBOLS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					HAVE_CONFIG_H,
+					OSX,
+				);
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				OTHER_CFLAGS = "-DDEBUG";
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = par2SL;
+				REZ_EXECUTABLE = YES;
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "-Wall";
+				ZERO_LINK = YES;
+			};
+			name = Development;
+		};
+		438E80C210B70A6800B069F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					i386,
+					x86_64,
+				);
+				COPY_PHASE_STRIP = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					HAVE_CONFIG_H,
+					OSX,
+					NDEBUG,
+				);
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				OTHER_CFLAGS = (
+					"-DNDEBUG",
+					"-falign-loops=16",
+					"-falign-jumps=16",
+					"-falign-functions=16",
+					"-falign-jumps-max-skip=15",
+					"-falign-loops-max-skip=15",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = par2SL;
+				REZ_EXECUTABLE = YES;
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.6.sdk";
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "-Wall";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4360F42B088D8AEF0063C32C /* Build configuration list for PBXProject "par2SL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4360F42C088D8AEF0063C32C /* Development */,
+				4360F42E088D8AEF0063C32C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Development;
+		};
+		438E80BF10B70A6800B069F6 /* Build configuration list for PBXNativeTarget "par2 Snow Leopard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				438E80C010B70A6800B069F6 /* Development */,
+				438E80C210B70A6800B069F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Development;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 43E9B9A1048E04C000000096 /* Project object */;
+}
